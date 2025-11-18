@@ -12,6 +12,19 @@ const SECTION_LABELS = {
 const COUNTDOWN_DURATION_MS = 120 * 60 * 60 * 1000
 const COUNTDOWN_STORAGE_KEY = 'coskun-countdown-target'
 
+const WORK_HOURS = [
+  {
+    label: 'Başlangıç',
+    value: '04:30',
+    detail: `Yapılacaklar listesi 08.00'de güncellenir`
+  },
+  {
+    label: 'Gün Sonu',
+    value: '22:00',
+    detail: `Gün sonu raporu 19.00'da güncellenir`
+  }
+]
+
 const calculateTimeLeft = (targetTimestamp) => {
   const diff = Math.max(targetTimestamp - Date.now(), 0)
   const totalSeconds = Math.floor(diff / 1000)
@@ -114,6 +127,21 @@ function App() {
 
   return (
     <main className="app">
+      <section className="work-hours" role="complementary" aria-label="Çalışma Saatleri">
+        <p className="work-hours__title">Çalışma Saatleri</p>
+        <div className="work-hours__slots">
+          {WORK_HOURS.map((slot) => (
+            <div className="work-hours__slot" key={slot.label}>
+              <span className="work-hours__slot-label">{slot.label}</span>
+              <strong className="work-hours__slot-value">{slot.value}</strong>
+              <span className="work-hours__slot-detail">{slot.detail}</span>
+            </div>
+          ))}
+        </div>
+        <p className="work-hours__note">
+          Her sabah 08.00 yapılacaklar, akşam 19.00 tamamlama raporu girilir.
+        </p>
+      </section>
       {showWelcome && (
         <div className="app-alert" role="alert">
           <p className="app-alert__message">{`Coşkun Bey merhaba,

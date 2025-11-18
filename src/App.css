@@ -28,12 +28,12 @@ body {
 
 .work-hours {
     align-self: flex-start;
-    background: #0f172a;
-    border: 1px solid rgba(248, 250, 252, 0.08);
+    background: transparent;
+    border: 1px solid rgba(248, 250, 252, 0.12);
     border-radius: 1rem;
     padding: 1.25rem 1.5rem;
-    width: min(420px, 100%);
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+    width: min(470px, 100%);
+    backdrop-filter: blur(6px);
 }
 
 .work-hours__title {
@@ -44,18 +44,15 @@ body {
     margin-bottom: 1rem;
 }
 
-.work-hours__slots {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 1rem;
+.work-hours__row {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
     margin-bottom: 1rem;
 }
 
-.work-hours__slot {
-    background: rgba(15, 23, 42, 0.6);
-    border-radius: 0.85rem;
-    padding: 0.85rem;
-    border: 1px solid rgba(148, 163, 184, 0.15);
+.work-hours__segment {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 0.35rem;
@@ -69,7 +66,7 @@ body {
 }
 
 .work-hours__slot-value {
-    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 4vw, 2rem);
     color: #f8fafc;
     font-weight: 700;
 }
@@ -77,6 +74,12 @@ body {
 .work-hours__slot-detail {
     font-size: 0.85rem;
     color: #cbd5f5;
+}
+
+.work-hours__separator {
+    font-size: 1.5rem;
+    color: #94a3b8;
+    font-weight: 600;
 }
 
 .work-hours__note {
@@ -176,6 +179,7 @@ body {
 }
 
 .day-card {
+    margin-bottom: 10rem;
     background: #111827;
     border-radius: 1rem;
     padding: 1rem;

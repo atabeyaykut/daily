@@ -12,18 +12,18 @@ const SECTION_LABELS = {
 const COUNTDOWN_DURATION_MS = 120 * 60 * 60 * 1000
 const COUNTDOWN_STORAGE_KEY = 'coskun-countdown-target'
 
-const WORK_HOURS = [
-  {
+const WORK_HOURS = {
+  start: {
     label: 'Başlangıç',
     value: '04:30',
     detail: `Yapılacaklar listesi 08.00'de güncellenir`
   },
-  {
-    label: 'Gün Sonu',
+  end: {
+    label: 'Bitiş',
     value: '22:00',
     detail: `Gün sonu raporu 19.00'da güncellenir`
   }
-]
+}
 
 const calculateTimeLeft = (targetTimestamp) => {
   const diff = Math.max(targetTimestamp - Date.now(), 0)
@@ -129,18 +129,21 @@ function App() {
     <main className="app">
       <section className="work-hours" role="complementary" aria-label="Çalışma Saatleri">
         <p className="work-hours__title">Çalışma Saatleri</p>
-        <div className="work-hours__slots">
-          {WORK_HOURS.map((slot) => (
-            <div className="work-hours__slot" key={slot.label}>
-              <span className="work-hours__slot-label">{slot.label}</span>
-              <strong className="work-hours__slot-value">{slot.value}</strong>
-              <span className="work-hours__slot-detail">{slot.detail}</span>
-            </div>
-          ))}
+        <div className="work-hours__row">
+          <div className="work-hours__segment">
+            <span className="work-hours__slot-label">{WORK_HOURS.start.label}</span>
+            <strong className="work-hours__slot-value">{WORK_HOURS.start.value}</strong>
+            <span className="work-hours__slot-detail">{WORK_HOURS.start.detail}</span>
+          </div>
+          <span className="work-hours__separator" aria-hidden="true">
+            -
+          </span>
+          <div className="work-hours__segment">
+            <span className="work-hours__slot-label">{WORK_HOURS.end.label}</span>
+            <strong className="work-hours__slot-value">{WORK_HOURS.end.value}</strong>
+            <span className="work-hours__slot-detail">{WORK_HOURS.end.detail}</span>
+          </div>
         </div>
-        <p className="work-hours__note">
-          Her sabah 08.00 yapılacaklar, akşam 19.00 tamamlama raporu girilir.
-        </p>
       </section>
       {showWelcome && (
         <div className="app-alert" role="alert">

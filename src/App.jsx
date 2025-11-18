@@ -20,7 +20,7 @@ function App() {
   const eggTimeoutRef = useRef(null)
 
   useEffect(() => {
-    const hasVisited = localStorage.getItem('coskunn-hasVisited')
+    const hasVisited = localStorage.getItem('coskun-hasVisited')
     if (!hasVisited) {
       setShowWelcome(true)
       localStorage.setItem('coskun-hasVisited', 'true')

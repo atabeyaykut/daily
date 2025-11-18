@@ -15,56 +15,5 @@
         "issuesEncountered": [
             "Saat 19.00'da güncellenecektir"
         ]
-    },
-    "day2": {
-        "todayTasks": [
-            "Birkaç adım geriye dönmek zorunda kaldım, geri dönüp tekrar başlayacağım",
-            "OCR kısmında kartı gördüğünde arka arkaya 3 çekim yapacak şekilde optimize etmeye çalışacağım",
-            "NFC kısmında okuma işleminde bir problem oluştu. Asenkronluk ile alakalı bir problem var OCR -> NFC geçişinde. Bunu düzeltmeliyim"
-        ],
-        "potentialProblems": [
-            "OCR kısmında kartı görme konusunda ve kartı ayırt edebilme konusunda configrasyon sorunları çekebilirim",
-            "Sanırım ekstra bir paket veya C++ kısmında geliştirme gerekebilir ve Java bilgisi ile C++ yazarken zorlanıyorum"
-        ],
-        "completedToday": [
-            "Saat 19.00'da güncellenecektir"
-        ],
-        "issuesEncountered": [
-            "Saat 19.00'da güncellenecektir"
-        ]
-    },
-    "day4": {
-        "todayTasks": [
-            "Birkaç adım geriye dönmek zorunda kaldım, geri dönüp tekrar başlayacağım",
-            "OCR kısmında kartı gördüğünde arka arkaya 3 çekim yapacak şekilde optimize etmeye çalışacağım",
-            "NFC kısmında okuma işleminde bir problem oluştu. Asenkronluk ile alakalı bir problem var OCR -> NFC geçişinde. Bunu düzeltmeliyim"
-        ],
-        "potentialProblems": [
-            "OCR kısmında kartı görme konusunda ve kartı ayırt edebilme konusunda configrasyon sorunları çekebilirim",
-            "Sanırım ekstra bir paket veya C++ kısmında geliştirme gerekebilir ve Java bilgisi ile C++ yazarken zorlanıyorum"
-        ],
-        "completedToday": [
-            "Saat 19.00'da güncellenecektir"
-        ],
-        "issuesEncountered": [
-            "Saat 19.00'da güncellenecektir"
-        ]
-    },
-    "day5": {
-        "todayTasks": [
-            "Birkaç adım geriye dönmek zorunda kaldım, geri dönüp tekrar başlayacağım",
-            "OCR kısmında kartı gördüğünde arka arkaya 3 çekim yapacak şekilde optimize etmeye çalışacağım",
-            "NFC kısmında okuma işleminde bir problem oluştu. Asenkronluk ile alakalı bir problem var OCR -> NFC geçişinde. Bunu düzeltmeliyim"
-        ],
-        "potentialProblems": [
-            "OCR kısmında kartı görme konusunda ve kartı ayırt edebilme konusunda configrasyon sorunları çekebilirim",
-            "Sanırım ekstra bir paket veya C++ kısmında geliştirme gerekebilir ve Java bilgisi ile C++ yazarken zorlanıyorum"
-        ],
-        "completedToday": [
-            "Saat 19.00'da güncellenecektir"
-        ],
-        "issuesEncountered": [
-            "Saat 19.00'da güncellenecektir"
-        ]
     }
 }

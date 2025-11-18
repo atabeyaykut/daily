@@ -10,10 +10,15 @@
             "Sanırım ekstra bir paket veya C++ kısmında geliştirme gerekebilir ve Java bilgisi ile C++ yazarken zorlanıyorum"
         ],
         "completedToday": [
-            "Saat 19.00'da güncellenecektir"
+            "OCR kısmında 3 fotoğraf çekme optimizasyonu yaptım",
+            "NFC kısmından bilgileri düzgün okumaya başladı"
         ],
         "issuesEncountered": [
-            "Saat 19.00'da güncellenecektir"
+            "OCR hala kart tanıma konusunda sorunlar çekiyor. Kartı algılamak için birkaç fotoğraf çekiyor ve bu cache'i dolduruyor",
+            "NFC kısmında okuma işleminde bir problem oluştu. Asenkronluk ile alakalı bir problem var OCR -> NFC geçişinde",
+            "NFC okuma işleminde okumak için gelmesini beklemediği bilgiler gelmeden okumaya çalıştığı için okuyamıyor ve  telefonda txt dosyasına kaydediyor",
+            "Kullandığım image-crop-picker paketi sorun çıkardı",
+            "Eski dosyama döndüğümde config dosyaları çok büyük problemler çıkardı"
         ]
     }
 }

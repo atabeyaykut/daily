@@ -9,6 +9,20 @@ const SECTION_LABELS = {
   issuesEncountered: 'Çözemediğim Problemler'
 }
 
+const COUNTDOWN_DURATION_MS = 120 * 60 * 60 * 1000
+const COUNTDOWN_STORAGE_KEY = 'coskun-countdown-target'
+
+const calculateTimeLeft = (targetTimestamp) => {
+  const diff = Math.max(targetTimestamp - Date.now(), 0)
+  const totalSeconds = Math.floor(diff / 1000)
+  const days = Math.floor(totalSeconds / 86400)
+  const hours = Math.floor((totalSeconds % 86400) / 3600)
+  const minutes = Math.floor((totalSeconds % 3600) / 60)
+  const seconds = totalSeconds % 60
+
+  return { days, hours, minutes, seconds }
+}
+
 function App() {
   const days = Object.entries(mockData)
   const [expandedDays, setExpandedDays] = useState(() =>
@@ -16,6 +30,9 @@ function App() {
   )
   const [showWelcome, setShowWelcome] = useState(false)
   const [showEasterEgg, setShowEasterEgg] = useState(false)
+  const [timeLeft, setTimeLeft] = useState(() =>
+    calculateTimeLeft(Date.now() + COUNTDOWN_DURATION_MS)
+  )
   const shiftClicksRef = useRef([])
   const eggTimeoutRef = useRef(null)
 
@@ -54,6 +71,36 @@ function App() {
       document.removeEventListener('click', handleShiftClick)
       if (eggTimeoutRef.current) {
         clearTimeout(eggTimeoutRef.current)
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    const storedTarget = localStorage.getItem(COUNTDOWN_STORAGE_KEY)
+    let targetTimestamp = storedTarget ? Number(storedTarget) : NaN
+
+    if (!targetTimestamp || Number.isNaN(targetTimestamp) || targetTimestamp <= Date.now()) {
+      targetTimestamp = Date.now() + COUNTDOWN_DURATION_MS
+      localStorage.setItem(COUNTDOWN_STORAGE_KEY, String(targetTimestamp))
+    }
+
+    let timerId
+
+    const tick = () => {
+      const nextTimeLeft = calculateTimeLeft(targetTimestamp)
+      setTimeLeft(nextTimeLeft)
+
+      if (targetTimestamp - Date.now() <= 0 && timerId) {
+        clearInterval(timerId)
+      }
+    }
+
+    tick()
+    timerId = setInterval(tick, 1000)
+
+    return () => {
+      if (timerId) {
+        clearInterval(timerId)
       }
     }
   }, [])
@@ -157,6 +204,35 @@ Not: Sayfaya tekrar girdiğinizde bu mesaj gözükmeyecektir. LocalStorage'e key
           </button>
         </div>
       )}
+      <div className="countdown" role="timer" aria-live="polite">
+        <p className="countdown__label">Geri Sayım</p>
+        <div className="countdown__values">
+          <div className="countdown__segment">
+            <span className="countdown__number">
+              {String(timeLeft.days).padStart(2, '0')}
+            </span>
+            <span className="countdown__unit">Gün</span>
+          </div>
+          <div className="countdown__segment">
+            <span className="countdown__number">
+              {String(timeLeft.hours).padStart(2, '0')}
+            </span>
+            <span className="countdown__unit">Saat</span>
+          </div>
+          <div className="countdown__segment">
+            <span className="countdown__number">
+              {String(timeLeft.minutes).padStart(2, '0')}
+            </span>
+            <span className="countdown__unit">Dakika</span>
+          </div>
+          <div className="countdown__segment">
+            <span className="countdown__number">
+              {String(timeLeft.seconds).padStart(2, '0')}
+            </span>
+            <span className="countdown__unit">Saniye</span>
+          </div>
+        </div>
+      </div>
     </main>
   )
 }

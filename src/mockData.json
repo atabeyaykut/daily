@@ -1,6 +1,7 @@
 {
     "day1": {
         "todayTasks": [
+            "Birkaç adım geriye dönmek zorunda kaldım, geri dönüp tekrar başlayacağım",
             "OCR kısmında kartı gördüğünde arka arkaya 3 çekim yapacak şekilde optimize etmeye çalışacağım",
             "NFC kısmında okuma işleminde bir problem oluştu. Asenkronluk ile alakalı bir problem var OCR -> NFC geçişinde. Bunu düzeltmeliyim"
         ],

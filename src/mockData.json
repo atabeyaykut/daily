@@ -23,17 +23,20 @@
     },
     "day2": {
         "todayTasks": [
-            "OCR kısmında kthread ve cache yönetimini düzeltmeliyim",
+            "OCR kısmında thread ve cache yönetimini düzeltmeliyim",
             "NFC tarafındaki asenkronluk sorununu düzeltmeliyim"
         ],
         "potentialProblems": [
             "Temiz bir kafa ile dikkatimi tam vermezsem işler çok zor olur benim için"
         ],
         "completedToday": [
-            "-"
+            "OCR kısmında thread ve cache yönetimini yaptım ve okuma işlemi oluyor",
+            "NFC için protocol ve crypto işlemlerini yaptım",
+            "NFC protokollerinde EF.CardAccess dosyası bulunursa → PACE kullanılıyor, Bulunamazsa → BAC (legacy) kullanılıyor"
         ],
         "issuesEncountered": [
-            "-"
+            "OCR kısmında 3 fotoğrafı çekip optimize etmek yerine fotoğraf çekip okuma yapıyor ve bunu 3 kere arka arkaya yapıyor",
+            "NFC kısmında protocoller ve cryptolar doğru şekilde entegre çalışmıyor"
         ]
     }
 }

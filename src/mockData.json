@@ -20,5 +20,20 @@
             "Kullandığım image-crop-picker paketi sorun çıkardı",
             "Eski dosyama döndüğümde config dosyaları çok büyük problemler çıkardı"
         ]
+    },
+    "day2": {
+        "todayTasks": [
+            "OCR kısmında kthread ve cache yönetimini düzeltmeliyim",
+            "NFC tarafındaki asenkronluk sorununu düzeltmeliyim"
+        ],
+        "potentialProblems": [
+            "Temiz bir kafa ile dikkatimi tam vermezsem işler çok zor olur benim için"
+        ],
+        "completedToday": [
+            "-"
+        ],
+        "issuesEncountered": [
+            "-"
+        ]
     }
 }

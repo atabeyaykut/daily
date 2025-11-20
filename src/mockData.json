@@ -48,10 +48,11 @@
             "Protocoller bana biraz sorun yaşatabilir"
         ],
         "completedToday": [
-            ""
+            "NFC protokolleri hakkında bir çok şey öğrendim"
         ],
         "issuesEncountered": [
-            ""
+            "NFC çözümlemesi için 55 farklı yöntem denedim ama hiçbiri olmadı",
+            "Tersine mühendislik ile E-Devlet'in NFC okumasına bakmaya çalıştım ama tam yapamadım. Gece boyu buna uğraşacağım"
         ]
     }
 }

@@ -38,5 +38,20 @@
             "OCR kısmında 3 fotoğrafı çekip optimize etmek yerine fotoğraf çekip okuma yapıyor ve bunu 3 kere arka arkaya yapıyor",
             "NFC kısmında protocoller ve cryptolar doğru şekilde entegre çalışmıyor"
         ]
+    },
+    "day3": {
+        "todayTasks": [
+            "NFC tarafındaki protocoller ve crypto sorunlarını çözmeliyim",
+            "OCR kısmındaki fotoğraf olayını optimize etmeliyim"
+        ],
+        "potentialProblems": [
+            "Protocoller bana biraz sorun yaşatabilir"
+        ],
+        "completedToday": [
+            ""
+        ],
+        "issuesEncountered": [
+            ""
+        ]
     }
 }

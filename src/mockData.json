@@ -64,10 +64,11 @@
             "Bu sorunu çözmek tüm günümü alacak gibi görünüyor ama ondan sonra hiçbir işim kalmıyor neredeyse"
         ],
         "completedToday": [
-            ""
+            "OCR kısmında ufak optimizasyonlar yaptım",
+            "NFC protokolleri hakkında bir çok şey öğrendim"
         ],
         "issuesEncountered": [
-            ""
+            "NFC'de CAN numarasına ulaşamadığım için hiçbir şey yapamadım"
         ]
     }
 }

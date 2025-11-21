@@ -54,5 +54,20 @@
             "NFC çözümlemesi için 55 farklı yöntem denedim ama hiçbiri olmadı",
             "Tersine mühendislik ile E-Devlet'in NFC okumasına bakmaya çalıştım ama tam yapamadım. Gece boyu buna uğraşacağım"
         ]
+    },
+    "day4": {
+        "todayTasks": [
+            "NFC protokolleri için tersine mühendislik işlemine devam edeceğim",
+            "Eğer NFC kısmı biterse OCR kısmını optimize edeceğim"
+        ],
+        "potentialProblems": [
+            "Bu sorunu çözmek tüm günümü alacak gibi görünüyor ama ondan sonra hiçbir işim kalmıyor neredeyse"
+        ],
+        "completedToday": [
+            ""
+        ],
+        "issuesEncountered": [
+            ""
+        ]
     }
 }

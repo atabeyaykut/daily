@@ -70,5 +70,20 @@
         "issuesEncountered": [
             "NFC'de CAN numarasına ulaşamadığım için hiçbir şey yapamadım"
         ]
+    },
+    "day5": {
+        "todayTasks": [
+            "OCR kısmını optimize etmek ile uğraşacağım. Daha nasıl hızlandırabilirim ve kaliteli hale getirebilirim diye",
+            "Liveness modülünü bitireceğim"
+        ],
+        "potentialProblems": [
+            "Liveness kısmında yüz tanıma doğruluğu konusunda bazı zorluklar yaşayabilirim"
+        ],
+        "completedToday": [
+            ""
+        ],
+        "issuesEncountered": [
+            ""
+        ]
     }
 }

@@ -86,5 +86,20 @@
             "NFC kısmındaki sorunlar devam ediyor",
             "Yarın saat 09.00'a kadar aralıksız bu sorunu çözmeye çalışacağım eğer olmazsa sanırım oturup ağlayacağım"
         ]
+    },
+    "day6": {
+        "todayTasks": [
+            "Bugün Liveness kısmını bitireceğim",
+            "NFC sorununu hala çözemedim"
+        ],
+        "potentialProblems": [
+            "Liveness kısmında yüz karşılaştırma doğruluğu konusunda sorunlar yaşayabilirim"
+        ],
+        "completedToday": [
+            ""
+        ],
+        "issuesEncountered": [
+            ""
+        ]
     }
 }

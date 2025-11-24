@@ -101,5 +101,20 @@
         "issuesEncountered": [
             ""
         ]
+    },
+    "day7": {
+        "todayTasks": [
+            "NFC SORUNU SONUNDA TAMAMEN ÇÖZÜLDÜ",
+            "OCR'ı azıcık optimize edip paketleyeğim"
+        ],
+        "potentialProblems": [
+            "O kadar mutluyum ki düşünemiyorum"
+        ],
+        "completedToday": [
+            ""
+        ],
+        "issuesEncountered": [
+            ""
+        ]
     }
 }

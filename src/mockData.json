@@ -117,5 +117,21 @@
         "issuesEncountered": [
             "Enerjim bitti, yarın kendime izin vereceğim"
         ]
+    },
+     "day8": {
+        "todayTasks": [
+            "Ağır iş yapmamak için Liveness için workflow oluşturacağım",
+            "Canlı karşılaştırma için araştırma yapacağım"
+        ],
+        "potentialProblems": [
+            "Bugün kendi bilgisayarım yanımda değil o yüzden teorik kısımları halledeceğim",
+            "Çalışmazsam suçlu gibi hissediyorum"
+        ],
+        "completedToday": [
+            ""
+        ],
+        "issuesEncountered": [
+            ""
+        ]
     }
 }

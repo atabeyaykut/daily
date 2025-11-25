@@ -223,7 +223,9 @@ Not: Sayfaya tekrar girdiğinizde bu mesaj gözükmeyecektir. LocalStorage'e key
         <div className="easter-egg" role="status" aria-live="polite">
           <div>
             <p>🎉 Günün kötü espirisi 🎉</p>
-            <small>{`Ata, Coşkun Beyden özür dilemekten sıkılıdığı için artık hata yapmayacak.`}</small>
+            <small>{`Dün bir hosting firmasıyla tartıştım…
+Adam “Siten çöker” dedi.
+Ben de “Tamam, o zaman yükleniyorum” deyip üzerine atladım`}</small>
           </div>
           <button
             type="button"
@@ -235,35 +237,6 @@ Not: Sayfaya tekrar girdiğinizde bu mesaj gözükmeyecektir. LocalStorage'e key
           </button>
         </div>
       )}
-      <div className="countdown" role="timer" aria-live="polite">
-        <p className="countdown__label">Geri Sayım</p>
-        <div className="countdown__values">
-          <div className="countdown__segment">
-            <span className="countdown__number">
-              {String(timeLeft.days).padStart(2, '0')}
-            </span>
-            <span className="countdown__unit">Gün</span>
-          </div>
-          <div className="countdown__segment">
-            <span className="countdown__number">
-              {String(timeLeft.hours).padStart(2, '0')}
-            </span>
-            <span className="countdown__unit">Saat</span>
-          </div>
-          <div className="countdown__segment">
-            <span className="countdown__number">
-              {String(timeLeft.minutes).padStart(2, '0')}
-            </span>
-            <span className="countdown__unit">Dakika</span>
-          </div>
-          <div className="countdown__segment">
-            <span className="countdown__number">
-              {String(timeLeft.seconds).padStart(2, '0')}
-            </span>
-            <span className="countdown__unit">Saniye</span>
-          </div>
-        </div>
-      </div>
     </main>
   )
 }
